@@ -6,24 +6,21 @@ body {
 
 .main {
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 100px 334px 1fr;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: min(120px) min(335px) 1%;
 }
 
 .top-bar {
     display: grid;
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
-    grid-template-columns: 200px 1fr 100px 100px;
-    grid-template-rows: 100px 1fr;
+    grid-template-columns: 0.2fr 1fr 0.1fr 0.1fr;
     background-color: #111111;
-    row-gap: 10px;
 }
 .logo {
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    
 }
 
 .name {
@@ -35,7 +32,7 @@ body {
 
 .top-bar img {
     max-width: 200px;
-    height: 100px;
+    height: calc(100% - 5px);
 }
 
 .sidebar {
@@ -96,3 +93,24 @@ body {
     display: flex;
     justify-content: center;
 }
+
+#one {
+    display: none;
+    position: absolute;
+}
+
+#two {
+    display: none;
+    position: absolute;
+}
+
+#thre {
+    display: none;
+    position: absolute;
+}
+
+#four {
+    display: none;
+    position: absolute;
+}
+
