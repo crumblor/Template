@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background-color: #180101;
+    color: white;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px 334px 1fr;
+}
+
+.top-bar {
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    grid-template-columns: 200px 1fr 100px 100px;
+    grid-template-rows: 100px 1fr;
+    background-color: #111111;
+    row-gap: 10px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.top-bar img {
+    max-width: 200px;
+    height: 100px;
+}
+
+.sidebar {
+    top: 10px;
+    font-size: 20px;
+    background-color: #111111;
+    border-radius: 10px;
+    position: sticky;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sidebar p {
+    display: flex;
+    justify-content: center;
+}
+
+.menulabel {
+    display: flex;
+    margin: 0;
+    margin-top: 8px;
+    font-size: 35px;
+    justify-content: center;
+}
+
+.main-body {
+    font-size: 17px;
+    background-color: #111111;
+    border-radius: 10px;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 3;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-body * {
+    padding-left: 10px;
+}
+
+.infopanel {
+    top: 10px;
+    font-size: 20px;
+    background-color: #111111;
+    border-radius: 10px;
+    position: sticky;
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    overflow: hidden;
+    margin-top: 10px; 
+    margin-right: 10px; 
+}
+
+.infopanel p {
+    display: flex;
+    justify-content: center;
+}
